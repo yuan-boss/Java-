@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Java面试准备.iml" filepath="$PROJECT_DIR$/Java面试准备.iml" />
+      <module fileurl="file://$PROJECT_DIR$/基础算法/基础算法.iml" filepath="$PROJECT_DIR$/基础算法/基础算法.iml" />
+      <module fileurl="file://$PROJECT_DIR$/并发篇/并发篇.iml" filepath="$PROJECT_DIR$/并发篇/并发篇.iml" />
+    </modules>
+  </component>
+</project>
