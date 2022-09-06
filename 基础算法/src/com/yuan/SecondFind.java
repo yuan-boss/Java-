@@ -7,4 +7,7 @@ package com.yuan;
  * @create: 2022-08-30 14:21
  **/
 public class SecondFind {
+    public static void main(String[] args) {
+
+    }
 }
