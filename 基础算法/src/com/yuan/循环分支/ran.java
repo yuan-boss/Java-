@@ -13,11 +13,7 @@ public class ran {
         int sum = 1;
         for (int i = 1; i <= 10; i++) {
 
-            sum =
         }
-
-    }
-    public int getRes(){
 
     }
 }
