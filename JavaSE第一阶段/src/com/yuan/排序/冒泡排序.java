@@ -1,4 +1,4 @@
-package com.yuan;
+package com.yuan.排序;
 
 /**
  * @module:
@@ -6,7 +6,7 @@ package com.yuan;
  * @author: yuan_boss
  * @create: 2022-09-17 14:33
  **/
-public class TwoArray {
+public class 冒泡排序 {
     public static void main(String[] args) {
         int[] arr = new int[]{3,5,2,9,1,55};
         int temp = 0;

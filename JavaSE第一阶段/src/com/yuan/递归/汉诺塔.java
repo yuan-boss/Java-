@@ -17,6 +17,7 @@ class TH{
 
     //num表示要移动的个数，a,b,c分别表示A，B，C塔
     public void move(int num,char a,char b,char c){
+        //如果只有一个盘，num = 1
         if (num == 1) {
             System.out.println(a + "->" + c);
         }else {

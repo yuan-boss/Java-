@@ -1,4 +1,4 @@
-package com.yuan;
+package com.yuan.排序;
 
 import java.util.Arrays;
 import java.util.stream.Collectors;
@@ -9,7 +9,7 @@ import java.util.stream.Collectors;
  * @author: yuan_boss
  * @create: 2022-09-17 08:48
  **/
-public class ArrayTest {
+public class 数组的翻转 {
     public static void main(String[] args) {
 
         /**
