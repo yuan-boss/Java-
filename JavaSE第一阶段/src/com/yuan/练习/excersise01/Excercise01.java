@@ -1,4 +1,4 @@
-package com.yuan.练习;
+package com.yuan.练习.excersise01;
 
 /**
  * @module:
