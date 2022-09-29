@@ -41,7 +41,7 @@ public class 迷宫 {
         }
         //使用findWay给老鼠找路
         T t = new T();
-        t.findWay(map,1,1);
+        t.findWay(map, 1, 1);
         System.out.println("=================找路的情况如下===============");
         for (int i = 0; i < map.length; i++) {
             for (int j = 0; j < map[i].length; j++) {
@@ -53,7 +53,7 @@ public class 迷宫 {
     }
 }
 
-class T{
+class T {
     //使用递归回溯的思想解决老鼠出迷宫
     //1. findWay方法就是找出迷宫的路径，
     //2. 找到返回true，没找到返回false
@@ -63,28 +63,28 @@ class T{
     //  0表示可以走，1表示障碍物，2表示可以走通，3表示走过，但是走不通，是死路
     //6.当map[6][5] = 2，说明找到通路了，就可以结束，否则继续找
     //7.先确定老鼠找路的策略 下->右->-上->左
-    public boolean findWay(int[][] map,int i,int j){
+    public boolean findWay(int[][] map, int i, int j) {
         if (map[6][5] == 2) {//说明已经找到
             return true;
-        }else {
-            if (map[i][j] == 0){//当前位置=0，说明路可以走
+        } else {
+            if (map[i][j] == 0) {//当前位置=0，说明路可以走
                 //我们假定可以走通
                 map[i][j] = 2;
                 //使用找路策略，来确定该位置是否真的可以走通
                 //下->右->-上->左
-                if (findWay(map,i+1,j)) {//先走下
+                if (findWay(map, i + 1, j)) {//先走下
                     return true;
-                } else if (findWay(map,i,j+1)) {//向右走
+                } else if (findWay(map, i, j + 1)) {//向右走
                     return true;
                 } else if (findWay(map, i - 1, j)) {//向上走
                     return true;
-                } else if (findWay(map, i, j-1)) {//向左走
+                } else if (findWay(map, i, j - 1)) {//向左走
                     return true;
                 } else {
                     map[i][j] = 3;
                     return false;
                 }
-            }else {//map[i][j] == 1,2,3
+            } else {//map[i][j] == 1,2,3
                 return false;
             }
         }
@@ -93,28 +93,28 @@ class T{
 
     //修改找路策略，看看路径是否有变化
     //下->右->-上->左  ===>  上->右->-下->左
-    public boolean findWay2(int[][] map,int i,int j){
+    public boolean findWay2(int[][] map, int i, int j) {
         if (map[6][5] == 2) {//说明已经找到
             return true;
-        }else {
-            if (map[i][j] == 0){//当前位置=0，说明路可以走
+        } else {
+            if (map[i][j] == 0) {//当前位置=0，说明路可以走
                 //我们假定可以走通
                 map[i][j] = 2;
                 //使用找路策略，来确定该位置是否真的可以走通
                 //下->右->-上->左
-                if (findWay2(map,i-1,j)) {//先走上
+                if (findWay2(map, i - 1, j)) {//先走上
                     return true;
-                } else if (findWay2(map,i,j+1)) {//向右走
+                } else if (findWay2(map, i, j + 1)) {//向右走
                     return true;
                 } else if (findWay2(map, i + 1, j)) {//向下走
                     return true;
-                } else if (findWay2(map, i, j-1)) {//向左走
+                } else if (findWay2(map, i, j - 1)) {//向左走
                     return true;
                 } else {
                     map[i][j] = 3;
                     return false;
                 }
-            }else {//map[i][j] == 1,2,3
+            } else {//map[i][j] == 1,2,3
                 return false;
             }
         }
