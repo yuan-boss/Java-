@@ -8,17 +8,22 @@ package com.yuan.继承;
  **/
 public class Student extends Base{
 //    String name = "studentName";
-    int ss = 3;
+    private int age = 3;
 //    public Student() {
 //        super("d");
 //        System.out.println("student--");
 //    }
     public Student(String name) {
+
         System.out.println("student--");
     }
     public Student(String name,String age) {
         String ddd = super.name;
         System.out.println("student--");
+    }
+
+    public Student(){
+        this("ddd");
     }
     public void m(){
         System.out.println(name);

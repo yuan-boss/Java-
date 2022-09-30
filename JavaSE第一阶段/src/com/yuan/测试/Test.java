@@ -14,6 +14,8 @@ public class Test {
         p1.name = "kdfk";
         System.out.println(p1.name);
 
+        boolean flag = 2 > 3;
+
     }
 
 }

@@ -10,10 +10,9 @@ public class Base {
     String name = "base";
     String age;
 
-    public Base() {
-        super();
-        System.out.println("Base----");
-    }
+        public Base() {
+            System.out.println("Base----");
+        }
 
     public Base(String name) {
         super();

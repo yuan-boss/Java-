@@ -11,6 +11,7 @@ public class People {
     private int age;
     private String job;
 
+
     public People(String name, int age, String job) {
         this.name = name;
         this.age = age;
